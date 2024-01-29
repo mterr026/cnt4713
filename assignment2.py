@@ -27,10 +27,10 @@ class Assignment2:
         firstTwo = (intToString[0] + intToString[1]) * n
         oddInts = []
 
-        for index in range(len(intToString)):
+        for index in range(1, len(intToString), 2):
             if index % 2 != 0:
-                value = intToString[index - 1] 
-                oddInts += value                                
+                value = intToString[index] 
+                oddInts.append(value )                               
         newString = "".join(oddInts)
         
         return firstTwo + str(int(newString) * int(n))
