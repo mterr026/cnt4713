@@ -6,14 +6,14 @@ class Assignment2:
 
     def tellAge(self, currentYear):
         age = currentYear - self.year
-        print("Your age is " + str(age))
+        print("your age is " + str(age) + "\n")
 
     def listAnniversaries(self):
         currentYear = 2024
         anniversaries = []
         birthYear = self.year
         decade = 0
-        while birthYear < currentYear:
+        while birthYear <= currentYear:
             decade += 10
             birthYear += 10
             if birthYear <= currentYear:
