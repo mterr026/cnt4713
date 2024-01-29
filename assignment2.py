@@ -12,12 +12,13 @@ class Assignment2:
         currentYear = 2024
         anniversaries = []
         birthYear = self.year
-        decade = 0
+        decade = None
         while birthYear <= currentYear:
             birthYear += 10
+            decade += 10
             if birthYear <= currentYear:
                 anniversaries.append(decade)
-            decade += 10
+            
         
         return anniversaries
        
