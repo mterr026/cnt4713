@@ -37,7 +37,7 @@ class Assignment2:
     
     @staticmethod
     def checkGoodString(string):
-        upper = string[0].isupper()
+        upper = string[0].islower()
         count = 0
         isTrue = None
         if len(string) >= 9:
