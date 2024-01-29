@@ -16,8 +16,8 @@ class Assignment2:
         while birthYear <= currentYear:
             birthYear += 10
             if birthYear <= currentYear:
-                decade += 10
                 anniversaries.append(decade)
+            decade += 10
         
         return anniversaries
        
