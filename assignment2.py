@@ -37,16 +37,16 @@ class Assignment2:
     
     @staticmethod
     def checkGoodString(string):
-        upper = string[0].islower()
+        lower = string[0].islower()
         count = 0
         isTrue = None
         if len(string) >= 9:
             isTrue = True
-        if upper:
+        if lower:
             isTrue = True
-            for i in string:
-                if i.isdigit():  
-                    count += 1
+        for i in string:
+            if i.isdigit():  
+                count += 1
         if count == 1:
             isTrue = True
         else:
